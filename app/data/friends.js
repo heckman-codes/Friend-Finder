@@ -11,6 +11,13 @@ var friends = [
     }
 ]
 
+// The AJAX is posting answers as strings instead integers — this code would cycle through everyone in the friends array scores and convert them. This does not work.
+// for (let j = 0; j < friends.length; j++) {
+//     for (k = 0; k < friends[j].scores.length; k++) {
+//         parseInt(friends[j].scores[k]);
+//     }
+// }
+
 const totalDifference = function (userOne, userTwo) {
     var scoreOne = 0;
     var scoreTwo = 0;
