@@ -8,7 +8,7 @@ module.exports = function (app) {
 
     app.post("/api/friends", function (req, res) {
         friends.push(req.body)
-        return res.json(friends[0])
+        return res.json(friends[Math.floor(Math.random() * friends.length)])
     })
 
 }
